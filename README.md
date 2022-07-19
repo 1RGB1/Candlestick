@@ -24,14 +24,14 @@
 ## Tasks
 
 - [ ] Candlestick Chart
-    - [ ] API integration
-    - [ ] Draw web 
-    - [ ] Adding price ranges and time ranges to chart 
-    - [ ] Draw candle
-    - [ ] Scrolling left and right 
+    - [ ] API integration [3h]
+    - [ ] Draw web [4h]
+    - [ ] Adding price ranges and time ranges to chart [4h]
+    - [ ] Draw candle [3h]
+    - [ ] Scrolling left and right [5h]
 - [ ] Bonus #1: List screen (Landing page)
-- [ ] Bonus #2: Draw events 
-- [ ] Bonus #3: Adding analytics 
+- [ ] Bonus #2: Draw events
+- [ ] Bonus #3: Adding analytics
 
 ## Author
 
