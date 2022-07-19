@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D29868001831A354CEE9FD5 /* Pods_Candlestick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */; };
 		D2C70CB428875AE7008C5A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70CB328875AE7008C5A91 /* AppDelegate.swift */; };
 		D2C70CB828875AE7008C5A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70CB728875AE7008C5A91 /* ViewController.swift */; };
 		D2C70CBB28875AE7008C5A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C70CB928875AE7008C5A91 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candlestick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2392805EB68C7DB72929A57F /* Pods-Candlestick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlestick.debug.xcconfig"; path = "Target Support Files/Pods-Candlestick/Pods-Candlestick.debug.xcconfig"; sourceTree = "<group>"; };
+		33EB5AE7D576E4D7F624A813 /* Pods-Candlestick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlestick.release.xcconfig"; path = "Target Support Files/Pods-Candlestick/Pods-Candlestick.release.xcconfig"; sourceTree = "<group>"; };
 		D2C70CB028875AE7008C5A91 /* Candlestick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candlestick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C70CB328875AE7008C5A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C70CB728875AE7008C5A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D29868001831A354CEE9FD5 /* Pods_Candlestick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DC49F70979C48E26C2EDFDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2392805EB68C7DB72929A57F /* Pods-Candlestick.debug.xcconfig */,
+				33EB5AE7D576E4D7F624A813 /* Pods-Candlestick.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BD903CF5A06B614907750F92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D2C70CA728875AE7008C5A91 = {
 			isa = PBXGroup;
 			children = (
 				D2C70CB228875AE7008C5A91 /* Candlestick */,
 				D2C70CB128875AE7008C5A91 /* Products */,
+				0DC49F70979C48E26C2EDFDE /* Pods */,
+				BD903CF5A06B614907750F92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D2C70CC428875AE9008C5A91 /* Build configuration list for PBXNativeTarget "Candlestick" */;
 			buildPhases = (
+				E3F94256B493954F1BAD75D6 /* [CP] Check Pods Manifest.lock */,
 				D2C70CAC28875AE7008C5A91 /* Sources */,
 				D2C70CAD28875AE7008C5A91 /* Frameworks */,
 				D2C70CAE28875AE7008C5A91 /* Resources */,
+				C10E1602E4B1700C17E4158E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C10E1602E4B1700C17E4158E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Candlestick/Pods-Candlestick-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Candlestick/Pods-Candlestick-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Candlestick/Pods-Candlestick-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3F94256B493954F1BAD75D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Candlestick-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D2C70CAC28875AE7008C5A91 /* Sources */ = {
@@ -278,6 +347,7 @@
 		};
 		D2C70CC528875AE9008C5A91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2392805EB68C7DB72929A57F /* Pods-Candlestick.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +380,7 @@
 		};
 		D2C70CC628875AE9008C5A91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB5AE7D576E4D7F624A813 /* Pods-Candlestick.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
