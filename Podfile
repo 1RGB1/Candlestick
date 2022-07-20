@@ -8,4 +8,5 @@ target 'Candlestick' do
   # Pods for Candlestick
   pod 'Alamofire'
   pod 'ProgressHUD'
+  pod 'SwiftyJSON'
 end
