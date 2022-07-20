@@ -46,7 +46,6 @@
 				2392805EB68C7DB72929A57F /* Pods-Candlestick.debug.xcconfig */,
 				33EB5AE7D576E4D7F624A813 /* Pods-Candlestick.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -56,6 +55,77 @@
 				02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D261FE8528876C8500439D1B /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				D2C70CB328875AE7008C5A91 /* AppDelegate.swift */,
+				D2C70CB928875AE7008C5A91 /* Main.storyboard */,
+				D2C70CBE28875AE9008C5A91 /* LaunchScreen.storyboard */,
+				D2C70CC128875AE9008C5A91 /* Info.plist */,
+				D261FE8628876C9300439D1B /* Resources */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		D261FE8628876C9300439D1B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2C70CBC28875AE9008C5A91 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D261FE8728876DDD00439D1B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D261FE8828876DEE00439D1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D261FE8928876DF400439D1B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D261FE8A28876DF900439D1B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D261FE8B28876E0C00439D1B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D261FE8D28876F1800439D1B /* DataSource */,
+				D261FE8C28876E9D00439D1B /* Manager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D261FE8C28876E9D00439D1B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		D261FE8D28876F1800439D1B /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		D2C70CA728875AE7008C5A91 = {
@@ -79,12 +149,13 @@
 		D2C70CB228875AE7008C5A91 /* Candlestick */ = {
 			isa = PBXGroup;
 			children = (
-				D2C70CB328875AE7008C5A91 /* AppDelegate.swift */,
+				D261FE8728876DDD00439D1B /* Common */,
+				D261FE8B28876E0C00439D1B /* Network */,
+				D261FE8A28876DF900439D1B /* Model */,
+				D261FE8828876DEE00439D1B /* View */,
+				D261FE8928876DF400439D1B /* ViewModel */,
 				D2C70CB728875AE7008C5A91 /* ViewController.swift */,
-				D2C70CB928875AE7008C5A91 /* Main.storyboard */,
-				D2C70CBC28875AE9008C5A91 /* Assets.xcassets */,
-				D2C70CBE28875AE9008C5A91 /* LaunchScreen.storyboard */,
-				D2C70CC128875AE9008C5A91 /* Info.plist */,
+				D261FE8528876C8500439D1B /* SupportingFiles */,
 			);
 			path = Candlestick;
 			sourceTree = "<group>";
@@ -355,7 +426,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B6HF4627C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Candlestick/Info.plist;
+				INFOPLIST_FILE = Candlestick/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Candlestick;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -388,7 +460,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4B6HF4627C;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Candlestick/Info.plist;
+				INFOPLIST_FILE = Candlestick/SupportingFiles/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Candlestick;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
