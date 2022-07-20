@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6D29868001831A354CEE9FD5 /* Pods_Candlestick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */; };
+		D2B6FA1E28889A0900D81958 /* ApiBaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA1D28889A0900D81958 /* ApiBaseRouter.swift */; };
+		D2B6FA2028889A2200D81958 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA1F28889A2200D81958 /* NetworkConstants.swift */; };
+		D2B6FA2228889A2E00D81958 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2128889A2E00D81958 /* NetworkError.swift */; };
+		D2B6FA2428889A3B00D81958 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2328889A3B00D81958 /* NetworkManager.swift */; };
+		D2B6FA2728889F0D00D81958 /* KLinesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2628889F0D00D81958 /* KLinesRouter.swift */; };
+		D2B6FA2B2888AA2500D81958 /* KLinesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2A2888AA2500D81958 /* KLinesStore.swift */; };
+		D2B6FA2D2888AB5200D81958 /* CandlestickParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2C2888AB5200D81958 /* CandlestickParser.swift */; };
+		D2B6FA2F2888AC3500D81958 /* Candlestick.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2B6FA2E2888AC3500D81958 /* Candlestick.swift */; };
 		D2C70CB428875AE7008C5A91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70CB328875AE7008C5A91 /* AppDelegate.swift */; };
 		D2C70CB828875AE7008C5A91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C70CB728875AE7008C5A91 /* ViewController.swift */; };
 		D2C70CBB28875AE7008C5A91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C70CB928875AE7008C5A91 /* Main.storyboard */; };
@@ -19,6 +27,14 @@
 		02CA7E50C7AEE7A03C7245B3 /* Pods_Candlestick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Candlestick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2392805EB68C7DB72929A57F /* Pods-Candlestick.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlestick.debug.xcconfig"; path = "Target Support Files/Pods-Candlestick/Pods-Candlestick.debug.xcconfig"; sourceTree = "<group>"; };
 		33EB5AE7D576E4D7F624A813 /* Pods-Candlestick.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Candlestick.release.xcconfig"; path = "Target Support Files/Pods-Candlestick/Pods-Candlestick.release.xcconfig"; sourceTree = "<group>"; };
+		D2B6FA1D28889A0900D81958 /* ApiBaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiBaseRouter.swift; sourceTree = "<group>"; };
+		D2B6FA1F28889A2200D81958 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		D2B6FA2128889A2E00D81958 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		D2B6FA2328889A3B00D81958 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D2B6FA2628889F0D00D81958 /* KLinesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLinesRouter.swift; sourceTree = "<group>"; };
+		D2B6FA2A2888AA2500D81958 /* KLinesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KLinesStore.swift; sourceTree = "<group>"; };
+		D2B6FA2C2888AB5200D81958 /* CandlestickParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandlestickParser.swift; sourceTree = "<group>"; };
+		D2B6FA2E2888AC3500D81958 /* Candlestick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Candlestick.swift; sourceTree = "<group>"; };
 		D2C70CB028875AE7008C5A91 /* Candlestick.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Candlestick.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C70CB328875AE7008C5A91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2C70CB728875AE7008C5A91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +117,7 @@
 		D261FE8A28876DF900439D1B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D2B6FA2E2888AC3500D81958 /* Candlestick.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +134,10 @@
 		D261FE8C28876E9D00439D1B /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				D2B6FA1D28889A0900D81958 /* ApiBaseRouter.swift */,
+				D2B6FA1F28889A2200D81958 /* NetworkConstants.swift */,
+				D2B6FA2128889A2E00D81958 /* NetworkError.swift */,
+				D2B6FA2328889A3B00D81958 /* NetworkManager.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -124,8 +145,19 @@
 		D261FE8D28876F1800439D1B /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
+				D2B6FA2528889EDD00D81958 /* KLines */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		D2B6FA2528889EDD00D81958 /* KLines */ = {
+			isa = PBXGroup;
+			children = (
+				D2B6FA2628889F0D00D81958 /* KLinesRouter.swift */,
+				D2B6FA2A2888AA2500D81958 /* KLinesStore.swift */,
+				D2B6FA2C2888AB5200D81958 /* CandlestickParser.swift */,
+			);
+			path = KLines;
 			sourceTree = "<group>";
 		};
 		D2C70CA728875AE7008C5A91 = {
@@ -275,8 +307,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2B6FA2D2888AB5200D81958 /* CandlestickParser.swift in Sources */,
+				D2B6FA2428889A3B00D81958 /* NetworkManager.swift in Sources */,
+				D2B6FA2028889A2200D81958 /* NetworkConstants.swift in Sources */,
+				D2B6FA2728889F0D00D81958 /* KLinesRouter.swift in Sources */,
 				D2C70CB828875AE7008C5A91 /* ViewController.swift in Sources */,
+				D2B6FA1E28889A0900D81958 /* ApiBaseRouter.swift in Sources */,
 				D2C70CB428875AE7008C5A91 /* AppDelegate.swift in Sources */,
+				D2B6FA2228889A2E00D81958 /* NetworkError.swift in Sources */,
+				D2B6FA2B2888AA2500D81958 /* KLinesStore.swift in Sources */,
+				D2B6FA2F2888AC3500D81958 /* Candlestick.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
