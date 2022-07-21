@@ -8,16 +8,16 @@
 import UIKit
 
 struct Candlestick {
-    var openTime: Date = Date()
-    var open: Double = 0
-    var high: Double = 0
-    var low: Double = 0
-    var close: Double = 0
-    var volume: Double = 0
-    var closeTime: Date = Date()
-    var quoteAssetVolume: Double = 0
-    var numberOfTrades: Int = 0
-    var takerBuyBaseAssetVolume: Double = 0
-    var takerBuyQuoteAssetVolume: Double = 0
-    var ignore: Double = 0
+    let openTime: Date
+    let open: Double
+    let high: Double
+    let low: Double
+    let close: Double
+    let volume: Double
+    let closeTime: Date
+    let quoteAssetVolume: Double
+    let numberOfTrades: Int
+    let takerBuyBaseAssetVolume: Double
+    let takerBuyQuoteAssetVolume: Double
+    let ignore: Double
 }
