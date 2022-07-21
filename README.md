@@ -24,7 +24,7 @@
 ## Tasks
 
 - [ ] Candlestick Chart
-    - [ ] API integration [3h]
+    - [X] API integration [initial: 3h] - [actual: 1h]
     - [ ] Draw web [4h]
     - [ ] Adding price ranges and time ranges to chart [4h]
     - [ ] Draw candle [3h]
